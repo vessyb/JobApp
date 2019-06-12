@@ -1,0 +1,425 @@
+{
+  "config" : {
+    "speedmentVersion" : "Speedment:3.1.16",
+    "nameProtected" : false,
+    "expanded" : true,
+    "appId" : "c27aca80-9bc1-411f-a18f-3d98d15750a6",
+    "companyName" : "company",
+    "name" : "dbo",
+    "packageLocation" : "src/main/java/",
+    "id" : "dbo",
+    "dbmses" : [
+      {
+        "expanded" : true,
+        "port" : 1433,
+        "schemas" : [
+          {
+            "tables" : [
+              {
+                "nameProtected" : true,
+                "expanded" : true,
+                "primaryKeyColumns" : [
+                  {
+                    "expanded" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  }
+                ],
+                "isView" : false,
+                "columns" : [
+                  {
+                    "databaseType" : "java.lang.Integer",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "autoIncrement" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "name",
+                    "id" : "name",
+                    "ordinalPosition" : 2,
+                    "enabled" : true
+                  }
+                ],
+                "name" : "Company",
+                "id" : "Company",
+                "enabled" : true
+              },
+              {
+                "foreignKeys" : [
+                  {
+                    "expanded" : false,
+                    "foreignKeyColumns" : [
+                      {
+                        "foreignDatabaseName" : "JobApplicationDatabase",
+                        "foreignSchemaName" : "dbo",
+                        "expanded" : true,
+                        "name" : "companyId",
+                        "foreignColumnName" : "id",
+                        "id" : "companyId",
+                        "foreignTableName" : "Company",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "name" : "JobPost_Company_id_fk",
+                    "id" : "JobPost_Company_id_fk",
+                    "enabled" : true
+                  },
+                  {
+                    "expanded" : false,
+                    "foreignKeyColumns" : [
+                      {
+                        "foreignDatabaseName" : "JobApplicationDatabase",
+                        "foreignSchemaName" : "dbo",
+                        "expanded" : true,
+                        "name" : "jobTypeId",
+                        "foreignColumnName" : "id",
+                        "id" : "jobTypeId",
+                        "foreignTableName" : "JobType",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "name" : "JobPost_JobType_id_fk",
+                    "id" : "JobPost_JobType_id_fk",
+                    "enabled" : true
+                  }
+                ],
+                "expanded" : true,
+                "primaryKeyColumns" : [
+                  {
+                    "expanded" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  }
+                ],
+                "isView" : false,
+                "columns" : [
+                  {
+                    "databaseType" : "java.lang.Integer",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "autoIncrement" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Integer",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "companyId",
+                    "id" : "companyId",
+                    "ordinalPosition" : 2,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "jobDescription",
+                    "id" : "jobDescription",
+                    "ordinalPosition" : 3,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Boolean",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "isActive",
+                    "id" : "isActive",
+                    "ordinalPosition" : 4,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Integer",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "jobTypeId",
+                    "id" : "jobTypeId",
+                    "ordinalPosition" : 5,
+                    "enabled" : true
+                  }
+                ],
+                "name" : "JobPost",
+                "id" : "JobPost",
+                "enabled" : true
+              },
+              {
+                "expanded" : true,
+                "primaryKeyColumns" : [
+                  {
+                    "expanded" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  }
+                ],
+                "isView" : false,
+                "columns" : [
+                  {
+                    "databaseType" : "java.lang.Integer",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "autoIncrement" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "jobType",
+                    "id" : "jobType",
+                    "ordinalPosition" : 2,
+                    "enabled" : true
+                  }
+                ],
+                "name" : "JobType",
+                "id" : "JobType",
+                "enabled" : true
+              },
+              {
+                "foreignKeys" : [
+                  {
+                    "expanded" : false,
+                    "foreignKeyColumns" : [
+                      {
+                        "foreignDatabaseName" : "JobApplicationDatabase",
+                        "foreignSchemaName" : "dbo",
+                        "expanded" : true,
+                        "name" : "userTypeId",
+                        "foreignColumnName" : "id",
+                        "id" : "userTypeId",
+                        "foreignTableName" : "UserType",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "name" : "UserAccount_User_type_id_fk",
+                    "id" : "UserAccount_User_type_id_fk",
+                    "enabled" : true
+                  }
+                ],
+                "expanded" : true,
+                "primaryKeyColumns" : [
+                  {
+                    "expanded" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  }
+                ],
+                "isView" : false,
+                "columns" : [
+                  {
+                    "databaseType" : "java.lang.Integer",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "autoIncrement" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Integer",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "userTypeId",
+                    "id" : "userTypeId",
+                    "ordinalPosition" : 2,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "name",
+                    "id" : "name",
+                    "ordinalPosition" : 3,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "email",
+                    "id" : "email",
+                    "ordinalPosition" : 4,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "password",
+                    "id" : "password",
+                    "ordinalPosition" : 5,
+                    "enabled" : true
+                  }
+                ],
+                "name" : "UserAccount",
+                "id" : "UserAccount",
+                "enabled" : true
+              },
+              {
+                "foreignKeys" : [
+                  {
+                    "expanded" : false,
+                    "foreignKeyColumns" : [
+                      {
+                        "foreignDatabaseName" : "JobApplicationDatabase",
+                        "foreignSchemaName" : "dbo",
+                        "expanded" : true,
+                        "name" : "jobPostId",
+                        "foreignColumnName" : "id",
+                        "id" : "jobPostId",
+                        "foreignTableName" : "JobPost",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "name" : "UserLog_JobPost_id_fk",
+                    "id" : "UserLog_JobPost_id_fk",
+                    "enabled" : true
+                  },
+                  {
+                    "expanded" : false,
+                    "foreignKeyColumns" : [
+                      {
+                        "foreignDatabaseName" : "JobApplicationDatabase",
+                        "foreignSchemaName" : "dbo",
+                        "expanded" : true,
+                        "name" : "userAccountId",
+                        "foreignColumnName" : "id",
+                        "id" : "userAccountId",
+                        "foreignTableName" : "UserAccount",
+                        "ordinalPosition" : 1
+                      }
+                    ],
+                    "name" : "UserLog_UserAccount_id_fk",
+                    "id" : "UserLog_UserAccount_id_fk",
+                    "enabled" : true
+                  }
+                ],
+                "expanded" : true,
+                "primaryKeyColumns" : [
+                  {
+                    "expanded" : true,
+                    "name" : "userAccountId",
+                    "id" : "userAccountId",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  },
+                  {
+                    "expanded" : true,
+                    "name" : "jobPostId",
+                    "id" : "jobPostId",
+                    "ordinalPosition" : 2,
+                    "enabled" : true
+                  }
+                ],
+                "isView" : false,
+                "columns" : [
+                  {
+                    "databaseType" : "java.lang.Integer",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "userAccountId",
+                    "id" : "userAccountId",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.Integer",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "jobPostId",
+                    "id" : "jobPostId",
+                    "ordinalPosition" : 2,
+                    "enabled" : true
+                  }
+                ],
+                "name" : "UserApplicationLog",
+                "id" : "UserApplicationLog",
+                "enabled" : true
+              },
+              {
+                "expanded" : true,
+                "primaryKeyColumns" : [
+                  {
+                    "expanded" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  }
+                ],
+                "isView" : false,
+                "columns" : [
+                  {
+                    "databaseType" : "java.lang.Integer",
+                    "typeMapper" : "com.speedment.runtime.typemapper.primitive.PrimitiveTypeMapper",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "autoIncrement" : true,
+                    "name" : "id",
+                    "id" : "id",
+                    "ordinalPosition" : 1,
+                    "enabled" : true
+                  },
+                  {
+                    "databaseType" : "java.lang.String",
+                    "expanded" : true,
+                    "nullable" : false,
+                    "name" : "type",
+                    "id" : "type",
+                    "ordinalPosition" : 2,
+                    "enabled" : true
+                  }
+                ],
+                "name" : "UserType",
+                "id" : "UserType",
+                "enabled" : true
+              }
+            ],
+            "expanded" : true,
+            "name" : "dbo",
+            "id" : "dbo",
+            "enabled" : true
+          }
+        ],
+        "typeName" : "SQLServer",
+        "ipAddress" : "127.0.0.1",
+        "name" : "JobApplicationDatabase",
+        "id" : "JobApplicationDatabase",
+        "enabled" : true,
+        "username" : "sa"
+      }
+    ],
+    "enabled" : true
+  }
+}
